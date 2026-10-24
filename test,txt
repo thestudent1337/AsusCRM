@@ -1,1 +1,1 @@
-([regex]::Matches([Text.Encoding]::Unicode.GetString([IO.File]::ReadAllBytes('C:\Windows\System32\WinBioPlugins\GoodixMocSensorAdapterNw.dll')),'[ -~]{5,}')).Value -match 'ProgramData|\.log|\.dmp' | Select-Object -Uniqueg|\.dmp') { $hits += $m.Value } } }; $hits | Select-Object -Unique | ForEach-Object { Write-Output "    $_" } }
+Get-ChildItem C:\Drivers -Recurse -Include *.exe,*.cmd,*.bat,*.ps1,*.vbs -ErrorAction SilentlyContinue | Select-Object FullName,Length,LastWriteTime | Format-Table -AutoSize
