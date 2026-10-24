@@ -16,3 +16,4 @@ Test-Path 'C:\Program Files\Microsoft Intune Management Extension' ; Get-ChildIt
 
 Get-ChildItem C:\ProgramData\BitLockerRemediation -Force -EA SilentlyContinue | Format-Table Name,Length,LastWriteTime -AutoSize ; Get-Content C:\ProgramData\BitLockerRemediation\remediation.log -Tail 25 -EA SilentlyContinue
 
+Get-Content C:\Support\BitLockerRemediation\BitLockerRemediation.ps1 -Head 40
