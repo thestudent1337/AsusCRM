@@ -1,1 +1,96 @@
-Get-ChildItem C:\Drivers -Recurse -Include *.exe,*.cmd,*.bat,*.ps1,*.vbs -ErrorAction SilentlyContinue | Select-Object FullName,Length,LastWriteTime | Format-Table -AutoSize
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Audio\Realtek\P01A5F-B2S\src\driver\dts\dtsapo4xservice\DtsApo4Service.exe                                508864 10/30/2025 2:14:52 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Audio\Realtek\P01A5F-B2S\src\driver\dts\dtsapo4xservice\DtsServiceUtility.exe                              43888 10/30/2025 2:14:54 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Audio\Realtek\P01A5F-B2S\src\driver\IntelHDASST\AS\IAS\IntelAudioService.exe                              368096 12/12/2025 3:54:56 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Audio\Realtek\P01A5F-B2S\src\driver\Realtek\RTK\RealtekService_934.7\RtkAudUService64.exe                3282984 12/10/2025 2:52:36 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018CL-B2N\src\driver\ipf_helper.exe                                                        727008 11/10/2025 7:45:30 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018CL-B2N\src\driver\ipf_uf.exe                                                           3334112 11/10/2025 7:45:32 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018CL-B2N\src\driver\setup.cmd                                                               5082 11/4/2025 9:43:46 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018CQ-B2Q\src\driver\SKR\trace-agent.exe                                                  3086664 12/11/2025 6:49:58 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018CQ-B2Q\src\driver\ipfsvc.exe                                                            660448 12/11/2025 6:49:54 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018KV-B2N\src\driver\TXTACMDetailFile.exe                                                   15456 2/25/2026 9:37:48 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018KV-B2N\src\InstallDriver.cmd                                                              3648 1/26/2024 11:20:50 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018PS-B2X\src\driver\Win10\IshHeci\x64\OffloadItemService.exe                              183264 11/11/2025 9:43:50 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018S4-B2V\src\driver\LMS\LMS.exe                                                          3868168 12/12/2025 3:43:50 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Chipset\Intel\P018S4-B2V\src\driver\WMIProvider\WMIRegistrationService.exe                                145416 12/8/2025 2:22:36 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\igfxShaderDistributionService.exe                          1375880 3/6/2026 12:16:22 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\IntelCpHDCPSvc.exe                                          379016 3/6/2026 12:16:34 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\IntelDisplayUMService.exe                                   289416 3/6/2026 12:16:34 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\IntelGFXFwUpdateTool.exe                                    420488 3/6/2026 12:16:36 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\vulkaninfo-32.exe                                          1907856 3/6/2026 12:16:44 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Intel\P01ABV-B2N\src\driver\Graphics\vulkaninfo-64.exe                                          2399368 3/6/2026 12:16:46 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\Display.NvContainer\NvContainerRecovery.bat     1951 12/20/2025 6:08:00 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\Display.NvContainer\NVDisplay.Container.exe  1275624 1/12/2026 11:43:16 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\Display.NvContainer\nvgwls.exe               3727080 1/12/2026 11:43:16 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\FreqTransfer32.exe                  3743976 1/12/2026 11:43:28 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\FreqTransfer64.exe                  4069096 1/12/2026 11:43:28 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\HighresBlender32.exe                3829992 1/12/2026 11:43:30 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\HighresBlender64.exe                4159720 1/12/2026 11:43:30 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\NvCameraEnable.exe                   384232 1/12/2026 11:43:32 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\NvImageConvert32.exe                3760872 1/12/2026 11:43:34 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\NvImageConvert64.exe                4058856 1/12/2026 11:43:34 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\ReShadeFXC32.exe                     869608 1/12/2026 11:43:36 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\ReShadeFXC64.exe                     958184 1/12/2026 11:43:36 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\SphericalEquirect32.exe             3583720 1/12/2026 11:43:36 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NvCamera\SphericalEquirect64.exe             3828456 1/12/2026 11:43:38 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\NVWMI\nvWmi64.exe                            4558568 1/12/2026 11:43:38 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\dbInstaller.exe                               828136 1/12/2026 11:36:42 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\Display.Driver\nvdispco64.exe                               1740520 1/12/2026 11:38:04 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Graphics\Nvidia\P019HF-B2U\src\Driver\Driver\setup.exe                                                    662248 1/12/2026 11:43:06 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\HP_Hotkey_Support_-_UWP_(P014UW-B2W)\src\InstallApp.cmd                                                5054 9/24/2025 6:19:33 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\Intel_Management_Engine_Driver_(P018S4-B2V)\src\InstallApp.cmd                                         4097 2/25/2026 12:22:06 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\Intel_Video_Driver_and_Control_Panel_(P01ABV-B2N)\src\InstallApp.cmd                                   3942 12/30/2023 1:49:12 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\NVIDIA_Video_Driver_and_Control_Panel_(P019HF-B2U)\src\InstallApp.cmd                                  3942 7/24/2025 10:08:42 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\InstallAllApps.cmd                                                                                     2460 4/10/2023 10:04:50 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\Goodix\P01A92-B2B\src\driver\INF\x64\GoodixSessionService.exe                                        81104 1/12/2026 11:15:34 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HpFirmwareUpdRec.exe                                                      3985088 2/24/2026 5:17:23 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HpFirmwareUpdRec64.exe                                                    5575880 2/24/2026 5:17:23 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HpSfuService.exe                                                          1355456 2/24/2026 5:17:23 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HpSfuService64.exe                                                         958144 2/24/2026 5:17:23 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HPToastNotificationActivator.exe                                           414912 2/24/2026 5:17:24 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014SA-B2Y\src\driver\HPToastNotificationActivator64.exe                                         468672 2/24/2026 5:17:24 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\ARM64\hpnotifications.exe                                                  227656 11/8/2025 5:29:30 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\ARM64\hpsvcsscan.exe                                                      7124816 11/8/2025 5:29:30 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\x64\hpnotifications.exe                                                    227656 11/8/2025 5:29:36 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\x64\hpsvcsscan.exe                                                        7124816 11/8/2025 5:29:36 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\x86\hpnotifications.exe                                                    227656 11/8/2025 5:29:42 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P014X5-B2M\src\driver\x86\hpsvcsscan.exe                                                        7124816 11/8/2025 5:29:44 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\recovery_fixup\AddHPConsentManagerLauncherScheduledTask.cmd                  4643 4/10/2019 10:54:58 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\recovery_fixup\AddHPConsentManagerLauncherScheduledTask.exe                164904 4/25/2019 6:59:30 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\recovery_fixup\ConsentManagerLauncher.cmd                                    3164 4/15/2019 9:23:26 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\_Shared\DiskCheck\ETD_GetSMART.exe               499968 9/17/2025 9:09:14 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\Battery\BatteryTest.exe                          149656 9/17/2025 9:09:02 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\DiskSelfTest\ETD_SMARTCmd.exe                    499200 9/17/2025 9:09:04 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\DriverCrash\x64\cdb.exe                          186400 9/17/2025 9:09:06 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\DriverCrash\x64\dumpchk.exe                       38776 9/17/2025 9:09:08 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\PnPDevice\HPDockWMIProvider.exe                 1720664 9/17/2025 9:09:12 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\ProcInfo\ProcInfo.exe                            555304 9/17/2025 9:09:12 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\Provider Data Sources\Sigcheck\sigcheck.exe                            455640 9/17/2025 9:09:14 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\TouchpointAnalyticsClient.exe                                          411968 9/17/2025 9:08:58 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\TouchpointAnalyticsClientService.exe                                   639808 9/17/2025 9:09:00 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018HB-B2G\src\driver\x64\TouchpointGpuInfo.exe                                                  646976 9/17/2025 9:09:00 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\AttTunerData.exe                                               455600 3/31/2026 3:42:12 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\devcon.exe                                                     114096 3/31/2026 3:42:12 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\FwFlashService.exe                                            2914224 3/31/2026 3:42:14 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\FwLowBatteryNotification.exe                                   251824 3/31/2026 3:42:16 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\IntelModemFwFlashNotification.exe                              254896 3/31/2026 3:42:16 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\fwflashing\TelephonyToolService.exe                                      3392944 3/31/2026 3:42:18 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\IoTCldAgentSVC.exe                                             854448 3/31/2026 3:41:52 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\mosquitto_pub.exe                                              120752 3/31/2026 3:42:00 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\mosquitto_sub.exe                                              126376 3/31/2026 3:42:00 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\router_agent_ut.exe                                            174824 3/31/2026 3:42:02 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\srvhlp.exe                                                    2902960 3/31/2026 3:42:02 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\tpm_rsa2048_dec.exe                                            185384 3/31/2026 3:42:04 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P018W7-B2Y\src\drivers\netadapter\WWANModemAuthenticator.exe                                     655280 3/31/2026 3:42:06 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\AppHelperCap.exe                                                       911560 1/7/2026 7:27:22 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\BridgeCommunication.exe                                                842944 1/7/2026 7:27:30 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\DeviceControlTool.exe                                                  524992 1/7/2026 7:27:38 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\DiagsCap.exe                                                           909512 1/7/2026 7:27:40 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\HPOneAgent.exe                                                       73968256 1/7/2026 7:28:00 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\NetworkCap.exe                                                         905920 1/7/2026 7:28:16 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\x64\SysInfoCap.exe                                                         911048 1/7/2026 7:28:34 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\HP\P01A5J-B2D\src\driver\pnputil.exe                                                                246272 9/14/2023 12:48:30 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\RollingWireless\P018X8-B2G\src\Drivers\ComDriver\PCIotAgentService.exe                             3305088 11/12/2025 1:11:03 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\RollingWireless\P018X8-B2G\src\installdrv.cmd                                                         5815 12/11/2025 12:34:45 PM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\Wacom Technology\P018TM-B2H\src\driver\64\WacomCustomBT.exe                                         646896 12/6/2025 10:19:56 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\Wacom Technology\P018TM-B2H\src\driver\64\WMagHelper.exe                                            570096 12/6/2025 10:20:00 AM
+C:\Drivers\EB_ZB_NB_MWS\W11_25H2\Other\Wacom Technology\P018TM-B2H\src\driver\64\WTabletServiceISD.exe                                    4938992 12/6/2025 10:20:02 AM
