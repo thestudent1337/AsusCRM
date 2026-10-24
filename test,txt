@@ -1,95 +1,18 @@
-PS C:\Users\2olivean\Downloads\Invoke-ARMA>
->> Get-ScheduledTask | ForEach-Object { $t = $_; $t.Actions | Where-Object { $_.Execute -match 'Drivers|ConsentManager' -or $_.Arguments -match 'Drivers|ConsentManager' } | ForEach-Object { Write-Output "$($t.TaskPath)$($t.TaskName)  ->  $($_.Execute) $($_.Arguments)" } }
-PS C:\Users\2olivean\Downloads\Invoke-ARMA>
-PS C:\Users\2olivean\Downloads\Invoke-ARMA>
->> Get-CimInstance Win32_Service | Where-Object { $_.PathName -match 'C:\\Drivers' } | Select-Object Name,StartName,PathName | Format-List
-PS C:\Users\2olivean\Downloads\Invoke-ARMA>
->> Get-Content 'C:\Drivers\EB_ZB_NB_MWS\W11_25H2\HSAs\InstallAllApps.cmd'
-@echo off
-set errcode=0
+Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run','HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce','HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run' -EA SilentlyContinue | Format-List
 
-if [%1]==[] (
-    set TargetImage=/online
-) else (
-    set TargetImage=/image:%1
-)
-set OSDriveLetter=%~d0
-rem
-rem Loggings of the UWP installation are captured in these logs for debugging purpose
-rem
-set Log_Folder=%OSDriveLetter%\ProgramData\HP\logs\UWP
-if not exist "%Log_Folder%" md "%Log_Folder%"
+Get-ChildItem 'C:\Windows\System32\GroupPolicy\Machine\Scripts','C:\Windows\SysWOW64\GroupPolicy\Machine\Scripts' -Recurse -EA SilentlyContinue | Select-Object FullName
 
-set ALLAPPS_Log=%Log_Folder%\_InstallAllApps.log
-
-echo. >> "%ALLAPPS_Log%"
-echo ^>^> %~f0 >> "%ALLAPPS_Log%"
-echo ^>^> %date% %time% >> "%ALLAPPS_Log%"
-echo. >> "%ALLAPPS_Log%"
-
-rem
-rem Retrieve list of installed provisioned appx packages before UWP Pack installation
-rem
-echo *dism %TargetImage% /get-provisionedappxpackages >> "%ALLAPPS_Log%"
-dism %TargetImage% /get-provisionedappxpackages >> "%ALLAPPS_Log%" 2>&1
-echo. >> "%ALLAPPS_Log%"
-
-rem
-rem Search for and install individual UWP app in the pack
-rem
-echo *dir /s /b "%~dp0installapp.cmd" >> "%ALLAPPS_Log%"
-dir /s /b "%~dp0installapp.cmd" >> "%ALLAPPS_Log%" 2>&1
-
-setlocal ENABLEDELAYEDEXPANSION
-
-for /f "tokens=*" %%i in ('dir /s /b "%~dp0installapp.cmd"') do (
-    echo Running "%%i"... >> "%ALLAPPS_Log%"
-    call "%%i" %1
-    if errorlevel 1 (
-        echo ***ERROR*** Failed to run "%%i", error=!errorlevel!. >> "%ALLAPPS_Log%"
-        if !errcode! equ 0 set errcode=!errorlevel!
-    )
-)
-
-endlocal & set errcode=%errcode%
-
-echo errcode=%errcode% >> "%ALLAPPS_Log%"
-
-echo *dir /s /b "%~dp0appxinst.cmd" >> "%ALLAPPS_Log%"
-dir /s /b "%~dp0appxinst.cmd" >> "%ALLAPPS_Log%" 2>&1
-
-setlocal ENABLEDELAYEDEXPANSION
-
-for /f "tokens=*" %%i in ('dir /s /b "%~dp0appxinst.cmd"') do (
-    echo Running "%%i"... >> "%ALLAPPS_Log%"
-    call "%%i" %1
-    if errorlevel 1 (
-        echo ***ERROR*** Failed to run "%%i", error=!errorlevel!. >> "%ALLAPPS_Log%"
-        if !errcode! equ 0 set errcode=!errorlevel!
-    )
-)
-
-endlocal & set errcode=%errcode%
-
-echo errcode=%errcode% >> "%ALLAPPS_Log%"
+Get-ChildItem 'C:\Windows\ccmcache' -Directory -EA SilentlyContinue | ForEach-Object { Get-ChildItem $_.FullName -Filter *.cmd -Recurse -EA SilentlyContinue } | Select-Object FullName
 
 
-:end_InstallAllApps
+Get-Content 'C:\Temp\CMD for driver.txt'
 
-rem
-rem Retrieve list of installed provisioned appx packages after UWP Pack installation
-rem
-echo. >> "%ALLAPPS_Log%"
-echo *dism %TargetImage% /get-provisionedappxpackages >> "%ALLAPPS_Log%"
-dism %TargetImage% /get-provisionedappxpackages >> "%ALLAPPS_Log%" 2>&1
+----------
 
-echo. >> "%ALLAPPS_Log%"
-echo *exit /b %errcode% >> "%ALLAPPS_Log%"
-echo. >> "%ALLAPPS_Log%"
-echo ^<^< %~f0 >> "%ALLAPPS_Log%"
-echo ^<^< %date% %time% >> "%ALLAPPS_Log%"
-echo. >> "%ALLAPPS_Log%"
 
-exit /b %errcode%
+Get-ScheduledTask | ForEach-Object { $t=$_; $t.Actions | Where-Object { $_.Execute -match 'BitLocker|Support|powershell' -or $_.Arguments -match 'BitLocker|Support' } | ForEach-Object { Write-Output "$($t.TaskPath)$($t.TaskName)  [runs as: $($t.Principal.UserId)]  ->  $($_.Execute) $($_.Arguments)" } }
 
-PS C:\Users\2olivean\Downloads\Invoke-ARMA>
+Test-Path 'C:\Program Files\Microsoft Intune Management Extension' ; Get-ChildItem 'C:\ProgramData\Microsoft\IntuneManagementExtension\Logs' -EA SilentlyContinue | Select-Object Name,LastWriteTime ; Select-String -Path 'C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\*.log' -Pattern 'BitLocker' -EA SilentlyContinue | Select-Object -Last 10 | ForEach-Object { $_.Line.Trim() }
+
+Get-ChildItem C:\ProgramData\BitLockerRemediation -Force -EA SilentlyContinue | Format-Table Name,Length,LastWriteTime -AutoSize ; Get-Content C:\ProgramData\BitLockerRemediation\remediation.log -Tail 25 -EA SilentlyContinue
+
